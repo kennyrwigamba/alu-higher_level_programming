@@ -4,6 +4,3 @@ def element_at(my_list, idx):
         return None
     return my_list[idx]
 
-
-my_list = []
-print(element_at(my_list, 0))
