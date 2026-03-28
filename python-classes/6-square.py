@@ -3,7 +3,7 @@
 
 
 class Square:
-    # Represents a square that can be printed at a given position.
+    """ Represents a square that can be printed at a given position. """
 
     def __init__(self, size=0, position=(0, 0)):
         # Initialize a Square with optional size and position.
