@@ -1,0 +1,8 @@
+Test cases for 7-base_geometry.py
+
+- integer_validator("my_int", 12) succeeds.
+- integer_validator("width", 89) succeeds.
+- integer_validator("name", "John") raises TypeError.
+- integer_validator("age", 0) raises ValueError.
+- integer_validator("distance", -4) raises ValueError.
+- area() raises Exception with exact message.
