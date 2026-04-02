@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """11. Square #2 module."""
 
-Rectangle = __import__('9-rectangle').Rectangle
+Rectangle = __import__("9-rectangle").Rectangle
 
 
 class Square(Rectangle):
@@ -19,5 +19,6 @@ class Square(Rectangle):
 
     def __str__(self):
         """Return [Square] <width>/<height>."""
-        return "[Square] {}/{}".format(self._Rectangle__width,
-                                        self._Rectangle__height)
+        return "[Square] {}/{}".format(
+            self._Rectangle__width, self._Rectangle__height
+        )
