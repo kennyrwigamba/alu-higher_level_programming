@@ -1,0 +1,10 @@
+Task 7: BaseGeometry integer_validator tests
+
+- Import BaseGeometry from 7-base_geometry.py.
+- Instantiate BaseGeometry.
+- Confirm area() raises Exception with message: area() is not implemented.
+- Confirm integer_validator("my_int", 12) does not raise.
+- Confirm integer_validator("width", 89) does not raise.
+- Confirm integer_validator("name", "John") raises TypeError.
+- Confirm integer_validator("age", 0) raises ValueError.
+- Confirm integer_validator("distance", -4) raises ValueError.
