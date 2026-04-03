@@ -17,11 +17,6 @@ class Student:
         If attrs is a list of strings, only attribute names in attrs are
         included.
         """
-        if (isinstance(attrs, list) and
-                all(isinstance(attr, str) for attr in attrs)):
-            return {
-                attr: getattr(self, attr)
-                for attr in attrs
-                if hasattr(self, attr)
-            }
+        if isinstance(attrs, list) and all(isinstance(attr, str) for attr in attrs):
+            return {attr: getattr(self, attr) for attr in attrs if hasattr(self, attr)}
         return self.__dict__.copy()
