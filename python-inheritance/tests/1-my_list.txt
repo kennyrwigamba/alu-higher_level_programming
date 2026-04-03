@@ -13,3 +13,16 @@ MyList doctests
 [1, 2, 3, 4, 5]
 >>> print(my_list)
 [1, 4, 2, 3, 5]
+
+>>> empty = MyList()
+>>> empty.print_sorted()
+[]
+
+>>> with_negative = MyList()
+>>> with_negative.append(3)
+>>> with_negative.append(-2)
+>>> with_negative.append(1)
+>>> with_negative.print_sorted()
+[-2, 1, 3]
+>>> print(with_negative)
+[3, -2, 1]
