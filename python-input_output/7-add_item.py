@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Add all command line arguments to a list and save it as JSON."""
 
-import os
 import sys
 
 save_to_json_file = __import__("5-save_to_json_file").save_to_json_file
@@ -10,7 +9,7 @@ load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
 
 def main():
     """Load items from add_item.json, extend with argv, then save."""
-    filename = os.path.join(os.path.dirname(__file__), "add_item.json")
+    filename = "add_item.json"
     try:
         items = load_from_json_file(filename)
     except FileNotFoundError:
